@@ -1,0 +1,163 @@
+{
+	"siteVersion": "1.139.0",
+	"_meta": {
+		"sources": [
+			{
+				"json": "SeaOfThieves",
+				"abbreviation": "SOT",
+				"full": "Sea Of Thieves",
+				"url": "",
+				"authors": [
+					"Vini..."
+				],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1633988498,
+		"dateLastModified": 1633988498
+	},
+	"monster": [
+		{
+			"name": "Elemental Monk",
+			"source": "SeaOfThieves",
+			"page": 165,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"ac": [
+				{
+					"ac": 21,
+					"from": [
+						"unarmored defense"
+					]
+				}
+			],
+			"hp": {
+				"formula": "24d10 + 96",
+				"average": 228
+			},
+			"speed": {
+				"walk": 50,
+				"burrow": 25,
+				"climb": 25,
+				"fly": 25,
+				"canHover": false,
+				"swim": 25
+			},
+			"str": 12,
+			"dex": 22,
+			"con": 18,
+			"int": 12,
+			"wis": 20,
+			"cha": 11,
+			"skill": {
+				"acrobatics": "+11",
+				"perception": "+10",
+				"stealth": "+11",
+				"athletics": "+6"
+			},
+			"passive": 20,
+			"languages": [
+				"Common",
+				"Primordial"
+			],
+			"cr": "13",
+			"trait": [
+				{
+					"name": "Unarmored Defense",
+					"entries": [
+						"While the monk is wearing no armor and wielding no shield, its AC includes its Wisdom modifier."
+					]
+				},
+				{
+					"name": "Elemental Resistance",
+					"entries": [
+						"The elemental master is resistant to one of the following damage types: acid, cold, fire, lightning or thunder."
+					]
+				},
+				{
+					"name": "Elemental Strike (1/Turn).",
+					"entries": [
+						"The elemental master can choose to apply one of the following effects to an unarmed attack that hits a creature:",
+						"* Flame’s Fury: The target takes an additional 18 ({@damage 4d8}) fire damage.",
+						"* Ocean’s Crash: The target takes an additional 4 ({@damage 1d8}) cold damage and must succeed on a {@dc 16} Dexterity saving throw or be knocked {@condition prone}.",
+						"* Wind’s Breath: The target takes an additional 4 ({@damage 1d8}) force damage and must succeed on a {@dc 16} Strength saving throw or be pushed 20 feet in a direction of the",
+						"elemental master’s choice. ",
+						"* Mountain’s Embrace: The target takes an additional 4 ({@damage 1d8}) bludgeoning damage. The elemental master gains resistance to nonmagical bludgeoning, piercing, and slashing damage until the start of its next turn."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The monk makes four attacks."
+					]
+				},
+				{
+					"name": "Flame’s Fury",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}33 ({@damage 6d8 + 6}) fire damage."
+					]
+				},
+				{
+					"name": "Elemental Strike",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d8 + 6}) bludgeoning damage, plus 4 ({@damage 1d8}) elemental damage."
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d8 + 6}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Dart",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 20/60 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"P"
+			],
+			"damageTags": [
+				"F",
+				"B",
+				"P",
+				"C",
+				"O"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"tokenUrl": "https://5e.tools/img/CM/Immortal Lotus Monk.png",
+			"shortName": true,
+			"alignment": [
+				"A"
+			],
+			"save": {
+				"str": "+6",
+				"dex": "+11",
+				"con": "+9",
+				"int": "+6",
+				"wis": "+10",
+				"cha": "+5"
+			},
+			"conditionInflict": [
+				"prone"
+			]
+		}
+	]
+}
