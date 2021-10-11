@@ -1,0 +1,156 @@
+{
+	"siteVersion": "1.139.0",
+	"_meta": {
+		"sources": [
+			{
+				"json": "SeaOfThieves",
+				"abbreviation": "SOT",
+				"full": "Sea Of Thieves",
+				"url": "",
+				"authors": [
+					"Vini..."
+				],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1633987126,
+		"dateLastModified": 1633987126
+	},
+	"monster": [
+		{
+			"name": "Corsair",
+			"source": "SeaOfThieves",
+			"page": 345,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item studded leather barding|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d6 + 48",
+				"average": 104
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 20,
+			"con": 16,
+			"int": 12,
+			"wis": 16,
+			"cha": 10,
+			"passive": 17,
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"cr": "9",
+			"environment": [
+				"arctic",
+				"coastal",
+				"desert",
+				"forest",
+				"grassland",
+				"hill",
+				"urban"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/commoner.mp3"
+			},
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"P"
+			],
+			"hasFluff": true,
+			"tokenUrl": "https://5e.tools/img/MM/Commoner.png",
+			"fluff": {
+				"name": "Commoner",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Commoners include peasants, serfs, slaves, servants, pilgrims, merchants, artisans, and hermits."
+								]
+							}
+						]
+					}
+				]
+			},
+			"shortName": true,
+			"save": {
+				"dex": "+9",
+				"con": "+7",
+				"wis": "+7"
+			},
+			"skill": {
+				"acrobatics": "+9",
+				"athletics": "+8",
+				"perception": "+7"
+			},
+			"trait": [
+				{
+					"name": "Fortune’s Favor.",
+					"entries": [
+						"When a corsair hits a target and deals damage, it can choose to roll a {@dice d6} and add the result",
+						"to the damage. If the result is a 1, the corsair’s attack instead deals 0 damage, but if the corsair roll 6, he double the damage of this attack."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The corsair makes three attacks."
+					]
+				},
+				{
+					"name": "Saber",
+					"entries": [
+						"{@atk rw} {@hit 9} to hit, range 120/400 ft., one target. {@h}14 ({@damage 2d8 + 5}) piercing damage."
+					]
+				},
+				{
+					"name": "Dirk (dagger)",
+					"entries": [
+						"{@atk rw} {@hit 9} to hit, range 120/400 ft., one target. {@h}10 ({@damage 2d4 + 5}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"RW",
+				"THW"
+			],
+			"reaction": [
+				{
+					"name": "Slip Blow",
+					"entries": [
+						"When hit by a melee attack, the corsair can roll a {@dice d6} and reduce the damage dealt by the result. Additionally, the corsair can choose to immediately move 5 feet without provoking opportunity attacks."
+					]
+				}
+			]
+		}
+	]
+}

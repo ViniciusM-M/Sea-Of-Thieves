@@ -1,0 +1,163 @@
+{
+	"siteVersion": "1.139.0",
+	"_meta": {
+		"sources": [
+			{
+				"json": "SeaOfThieves",
+				"abbreviation": "SOT",
+				"full": "Sea Of Thieves",
+				"url": "",
+				"authors": [
+					"Vini..."
+				],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1633987133,
+		"dateLastModified": 1633987133
+	},
+	"monster": [
+		{
+			"name": "Mask",
+			"source": "SeaOfThieves",
+			"page": 343,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d8 + 28",
+				"average": 91
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 15
+			},
+			"str": 11,
+			"dex": 20,
+			"con": 14,
+			"int": 18,
+			"wis": 16,
+			"cha": 16,
+			"save": {
+				"dex": "+9",
+				"int": "+8",
+				"con": "+6"
+			},
+			"skill": {
+				"acrobatics": "+9",
+				"deception": "+11",
+				"perception": "+7",
+				"stealth": "+9",
+				"persuasion": "+11"
+			},
+			"passive": 17,
+			"languages": [
+				"Thieves' cant plus any two languages"
+			],
+			"cr": "10",
+			"trait": [
+				{
+					"name": "Signature Attack (1/Turn)",
+					"entries": [
+						"While using its signature weapon (dart or rapier), the mask deals an extra 28",
+						"({@dice 8d6}) damage when it hits a target with a weapon attack."
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"If the mask is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the mask instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+					]
+				},
+				{
+					"name": "Cunning Action",
+					"entries": [
+						"On each of its turns, the mask can use a bonus action to take the Dash, Disengage, or",
+						"Hide action."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The assassin makes two attacks."
+					]
+				},
+				{
+					"name": "Saber",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) piercing damage."
+					]
+				},
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d4 + 5}) piercing damage."
+					]
+				}
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/assassin.mp3"
+			},
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"X",
+				"TC"
+			],
+			"damageTags": [
+				"P"
+			],
+			"hasFluff": true,
+			"tokenUrl": "https://5e.tools/img/MM/Assassin.png",
+			"fluff": {
+				"name": "Assassin",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Trained in the use of poison, assassins are remorseless killers who work for nobles, guildmasters, sovereigns, and anyone else who can afford them."
+								]
+							}
+						]
+					}
+				]
+			},
+			"shortName": true,
+			"miscTags": [
+				"MW"
+			],
+			"reaction": [
+				{
+					"name": "Uncanny Dodge",
+					"entries": [
+						"When an attacker that the mask can see hits it with an attack, the mask can use its reaction",
+						"to halve the attack’s damage against it."
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,274 @@
+{
+	"siteVersion": "1.139.0",
+	"_meta": {
+		"sources": [
+			{
+				"json": "SeaOfThieves",
+				"abbreviation": "SOT",
+				"full": "Sea Of Thieves",
+				"url": "",
+				"authors": [
+					"Vini..."
+				],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1633987145,
+		"dateLastModified": 1633987145
+	},
+	"monster": [
+		{
+			"name": "Musketeer",
+			"source": "SeaOfThieves",
+			"page": 183,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				15,
+				{
+					"ac": 18,
+					"condition": "with {@spell mage armor}",
+					"braces": true
+				}
+			],
+			"hp": {
+				"average": 225,
+				"formula": "30d8 + 90"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 15,
+			"dex": 20,
+			"con": 16,
+			"int": 18,
+			"wis": 15,
+			"cha": 18,
+			"save": {
+				"dex": "+11",
+				"con": "+9",
+				"cha": "+10"
+			},
+			"skill": {
+				"acrobatics": "+11",
+				"athletics": "+8",
+				"perception": "+14",
+				"stealth": "+11"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 24,
+			"languages": [
+				"Elvish",
+				"Undercommon",
+				"Common"
+			],
+			"cr": "18",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The musketeer is a 11th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 18}, {@hit 10} to hit with spell attacks). It has the following wizard spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell mage hand}",
+								"{@spell message}",
+								"{@spell poison spray}",
+								"{@spell ray of frost}",
+								"{@spell shocking grasp}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell mage armor}",
+								"{@spell searing smite}",
+								"{@spell wrathful smite}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell gust of wind}",
+								"{@spell invisibility}",
+								"{@spell misty step}",
+								"{@spell shatter}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell fireball}",
+								"{@spell haste}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell dimension door}",
+								"{@spell Otiluke's resilient sphere}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell cone of cold}"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"{@spell Tenser's transformation|XGE}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "War Magic",
+					"entries": [
+						"When the musketeer uses its action to cast a spell, it can make one weapon attack as a bonus action."
+					]
+				},
+				{
+					"name": "Firearms Training",
+					"entries": [
+						"Being within 5 feet of a hostile creature doesn’t impose disadvantage on the musketeer’s",
+						"light pistol ranged attacks."
+					]
+				},
+				{
+					"name": "Silver Weapons",
+					"entries": [
+						"The musketeer weapons are enchanted, and cause two extra dice on damage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The musketeer makes three attacks."
+					]
+				},
+				{
+					"name": "Silver Saber",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}18 ({@damage 3d8 + 5}) slashing damage.",
+						"If the target is a creature other than an undead or a construct, it must succeed on a {@dc 18} Constitution saving throw or lose 5 ({@dice 1d10}) hit points at the start of each of its turns due to an infernal wound. Each time the musketeer hits the wounded target with this attack, the damage dealt by the wound increases by 5 ({@dice 1d10}). Any creature can take an action to stanch the wound with a successful {@dc 16} Wisdom (Medicine) check. The wound also closes if the target receives magical healing."
+					]
+				},
+				{
+					"name": "Silver Dagger",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}12 ({@damage 3d4 + 5}) piercing damage."
+					]
+				},
+				{
+					"name": "Tenser Silver Dagger",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}12 ({@damage 3d4 + 5}) piercing damage, plus 13 ({@damage 2d12}) force damage."
+					]
+				},
+				{
+					"name": "Tenser Silver Saber",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}18 ({@damage 3d8 + 5}) piercing damage, plus 13 ({@damage 2d12}) force damage.",
+						"If the target is a creature other than an undead or a construct, it must succeed on a {@dc 18} Constitution saving throw or lose 5 ({@dice 1d10}) hit points at the start of each of its turns due to an infernal wound. Each time the musketeer hits the wounded target with this attack, the damage dealt by the wound increases by 5 ({@dice 1d10}). Any creature can take an action to stanch the wound with a successful {@dc 16} Wisdom (Medicine) check. The wound also closes if the target receives magical healing."
+					]
+				}
+			],
+			"environment": [
+				"underdark"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/drow-favored-consort.mp3"
+			},
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"E",
+				"U",
+				"C"
+			],
+			"damageTags": [
+				"S",
+				"P",
+				"O"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"conditionInflictSpell": [
+				"invisible"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/MTF/Drow Favored Consort.png",
+			"fluff": {
+				"name": "Drow Favored Consort",
+				"source": "MTF",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "quote",
+										"entries": [
+											"Many creatures enjoy torture, but the dark elves have made it into an exquisite art."
+										],
+										"by": "Mordenkainen"
+									},
+									{
+										"type": "entries",
+										"name": "Drow Favored Consort",
+										"entries": [
+											"Nearly all priestesses of {@deity Lolth|drow|mtf}, including the powerful matron mothers, take attractive drow as their consorts. Often these individuals serve no purpose beyond pleasure, breeding, or both, but sometimes consorts can gain the ear of their priestess and be relied on to provide useful advice. No position of consort is assured for long; priestesses are infamous for being fickle with their favor, which are they are especially glad to lavish on a consort who combines beauty with magical might."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MTF/Drow Favored Consort.jpg"
+						}
+					}
+				]
+			},
+			"shortName": true,
+			"miscTags": [
+				"MW"
+			]
+		}
+	]
+}

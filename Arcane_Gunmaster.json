@@ -1,0 +1,185 @@
+{
+	"siteVersion": "1.139.0",
+	"_meta": {
+		"sources": [
+			{
+				"json": "SeaOfThieves",
+				"abbreviation": "SOT",
+				"full": "Sea Of Thieves",
+				"url": "",
+				"authors": [
+					"Vini..."
+				],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1633987120,
+		"dateLastModified": 1633987120
+	},
+	"monster": [
+		{
+			"name": "Arcane Gunmaster",
+			"source": "SeaOfThieves",
+			"page": 345,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d6 + 32",
+				"average": 88
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 20,
+			"con": 14,
+			"int": 12,
+			"wis": 12,
+			"cha": 18,
+			"passive": 14,
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"cr": "5",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The arcane gunmaster makes two ranged attacks."
+					]
+				},
+				{
+					"name": "Pistol",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 60/240 ft., one target. {@h}12 ({@damage 2d6 + 5}) piercing damage."
+					]
+				},
+				{
+					"name": "Musket",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 120/400 ft., one target. {@h}23 ({@damage 4d8 + 5}) piercing damage."
+					]
+				}
+			],
+			"environment": [
+				"arctic",
+				"coastal",
+				"desert",
+				"forest",
+				"grassland",
+				"hill",
+				"urban"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/commoner.mp3"
+			},
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"RW"
+			],
+			"hasFluff": true,
+			"tokenUrl": "https://5e.tools/img/MM/Commoner.png",
+			"fluff": {
+				"name": "Commoner",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Commoners include peasants, serfs, slaves, servants, pilgrims, merchants, artisans, and hermits."
+								]
+							}
+						]
+					}
+				]
+			},
+			"shortName": true,
+			"save": {
+				"dex": "+8",
+				"con": "+5"
+			},
+			"skill": {
+				"acrobatics": "+8",
+				"arcana": "+4",
+				"perception": "+4"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The arcane gunmaster is a 6th-level spellcaster. Its spellcasting ability is Charisma (spell",
+						"save {@dc 15}, +7 to hit with spell attacks). It has the following sorcerer spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell acid splash}",
+								"{@spell mending}",
+								"{@spell shocking grasp}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell burning hands}",
+								"{@spell expeditious retreat}",
+								"{@spell thunderwave}"
+							],
+							"slots": 0
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CS"
+			],
+			"trait": [
+				{
+					"name": "Firearms Training",
+					"entries": [
+						"Being within 5 feet of a hostile creature doesn’t impose disadvantage on the arcane gunmaster’s heavy pistol ranged attacks."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"reaction": [
+				{
+					"name": "Danger Sense",
+					"entries": [
+						"The arcane gunmaster adds 4 to its AC against one attack that would hit it. To do so, the",
+						"arcane gunmaster must see the attacker."
+					]
+				}
+			]
+		}
+	]
+}
