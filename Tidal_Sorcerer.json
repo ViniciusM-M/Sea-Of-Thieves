@@ -1,0 +1,222 @@
+{
+	"siteVersion": "1.140.0",
+	"_meta": {
+		"sources": [
+			{
+				"json": "SeaOfThieves",
+				"abbreviation": "SOT",
+				"full": "Sea Of Thieves",
+				"url": "",
+				"authors": [
+					"Vini..."
+				],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1635025183,
+		"dateLastModified": 1635025183
+	},
+	"monster": [
+		{
+			"name": "Tidal Sorcerer",
+			"source": "SeaOfThieves",
+			"page": 345,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				14,
+				{
+					"special": "(17 with mage armor)"
+				}
+			],
+			"hp": {
+				"formula": "9d8 + 45",
+				"average": 85
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 10,
+			"dex": 18,
+			"con": 20,
+			"int": 14,
+			"wis": 16,
+			"cha": 20,
+			"passive": 13,
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"cr": "9",
+			"environment": [
+				"arctic",
+				"coastal",
+				"desert",
+				"forest",
+				"grassland",
+				"hill",
+				"urban"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/commoner.mp3"
+			},
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"S",
+				"L",
+				"T",
+				"A"
+			],
+			"hasFluff": true,
+			"tokenUrl": "https://5e.tools/img/MM/Commoner.png",
+			"fluff": {
+				"name": "Commoner",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Commoners include peasants, serfs, slaves, servants, pilgrims, merchants, artisans, and hermits."
+								]
+							}
+						]
+					}
+				]
+			},
+			"shortName": true,
+			"level": 9,
+			"save": {
+				"con": "+9",
+				"cha": "+9",
+				"dex": "+8"
+			},
+			"skill": {
+				"insight": "+7",
+				"deception": "+9",
+				"persuasion": "+9"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The sorcerer is a 6th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 13}, +5 to hit with spell attacks). It knows the following sorcerer spells:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell booming blade|TCE}",
+								"{@spell frostbite|XGE}",
+								"{@spell mage hand}",
+								"{@spell mending}",
+								"{@spell mind sliver|TCE}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell chromatic orb}",
+								"{@spell create or destroy water}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell blur}",
+								"{@spell misty step}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell dispel magic}",
+								"{@spell wall of water|XGE}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell freedom of movement}",
+								"{@spell polymorph}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell cloudkill}",
+								"{@spell conjure elemental}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CS"
+			],
+			"trait": [
+				{
+					"name": "Tidal Points",
+					"entries": [
+						"The sorcerer has 12 sorcery points. It can spend 2 sorcery points when it casts a spell to gain one of the following benefits:",
+						"High Tide. Creatures targeted by the spell must roll a Strength saving throw or be pushed 10 feet in a direction of the sorcerer’s choice. The sorcerer’s allies can voluntarily fail this saving throw.",
+						"Flood Tide. Creatures targeted by the spell gain temporary hit points equal to 10 + the level of the slot expended for 1 minute.",
+						"Ebb Tide. Creatures targeted by the spell take 10 acid damage in addition to any damage the spell normally deals.",
+						"Low Tide. Creatures targeted by the spell can’t use reactions until the beginning of the sorcerer’s next turn."
+					]
+				},
+				{
+					"name": "Sea Fury",
+					"entries": [
+						"If sorcerer casting a spell of 1st level or higher that deals lightning or thunder damage, stormy magic erupts from he. This eruption causes creatures of sorcerer choice that he can see within 10 feet to take lightning or thunder damage (choose each time this ability activates) equal to 20."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Tempestuous Magic",
+					"entries": [
+						"The sorcerer can use a bonus action to cause whirling gusts of elemental air to briefly surround he, immediately before or after sorcerer cast a spell of 1st level or higher. Doing so allows sorcerer to fly up to 10 feet without provoking opportunity attacks."
+					]
+				}
+			],
+			"resist": [
+				"lightning",
+				"thunder"
+			],
+			"action": [
+				{
+					"name": "Storm's Fury",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) slashing damage, plus 5 ({@damage 2d4}) lightning damage."
+					]
+				},
+				{
+					"name": "Storm's Strike",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) lightning damage, plus 24 ({@damage 1d8 + 20}) thunder damage.",
+						"If target moves ({@damage 2d8}) thunder damage"
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			]
+		}
+	]
+}

@@ -1,0 +1,309 @@
+{
+	"siteVersion": "1.140.0",
+	"_meta": {
+		"sources": [
+			{
+				"json": "SeaOfThieves",
+				"abbreviation": "SOT",
+				"full": "Sea Of Thieves",
+				"url": "",
+				"authors": [
+					"Vini..."
+				],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1635025133,
+		"dateLastModified": 1635025133
+	},
+	"monster": [
+		{
+			"name": "Kraken Priest",
+			"source": "SeaOfThieves",
+			"page": 215,
+			"size": "L",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"L",
+				"NX",
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 25,
+					"from": [
+						"Kraken Scale"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d12 + 180",
+				"average": 310
+			},
+			"speed": {
+				"walk": 60,
+				"swim": 30,
+				"fly": 30,
+				"canHover": false
+			},
+			"str": 26,
+			"dex": 18,
+			"con": 28,
+			"int": 22,
+			"wis": 20,
+			"cha": 30,
+			"skill": {
+				"perception": "+12",
+				"athletics": "+22",
+				"insight": "+12",
+				"survival": "+12",
+				"arcana": "+13",
+				"investigation": "+20"
+			},
+			"passive": 22,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"languages": [
+				"any two languages"
+			],
+			"cr": "22",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The priest's spellcasting ability is Wisdom (spell save {@dc 20}, {@hit 12} to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell antilife shell}",
+						"{@spell call lightning}",
+						"{@spell create or destroy water}",
+						"{@spell thunderous smite}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell arms of Hadar} (8° Ciclo)",
+							"{@spell banishment}",
+							"{@spell power word stun}"
+						],
+						"1e": [
+							"{@spell gate}",
+							"{@spell power word heal}",
+							"{@spell psychic scream|XGE}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The priest can breathe air and water."
+					]
+				},
+				{
+					"name": "Freedom of Movement",
+					"entries": [
+						"The kraken priest ignores difficult terrain, and magical effects can't reduce its speed or cause it to be {@condition restrained}. It can spend 5 feet of movement to escape from nonmagical restraints or being {@condition grappled}."
+					]
+				},
+				{
+					"name": "Siege Monster",
+					"entries": [
+						"The kraken priest deals double damage to objects and structures."
+					]
+				},
+				{
+					"name": "Sentinel",
+					"entries": [
+						"You have mastered techniques to take advantage of every drop in any enemy's guard, gaining the following benefits:",
+						"When you hit a creature with an opportunity attack, the creature's speed becomes 0 for the rest of the turn.",
+						"Creatures provoke opportunity attacks from you even if they take the Disengage action before leaving your reach.",
+						"When a creature within 5 feet of you makes an attack against a target other than you (and that target doesn't have this feat), you can use your reaction to make a melee weapon attack against the attacking creature."
+					]
+				},
+				{
+					"name": "Limited Magic Immunity",
+					"entries": [
+						"The kraken priest can't be affected or detected by spells of 6th level or lower unless it wishes to be. It has advantage on saving throws against all other spells and magical effects."
+					]
+				},
+				{
+					"name": "Storm Aura",
+					"entries": [
+						"At the start of each of the kraken priest's turns, each creature within 5 feet of it takes 10 ({@damage 3d6}) lightning damage. A creature that touches the kraken priest or hits it with a melee attack while within 5 feet of it takes 10 ({@damage 3d6}) lightning damage."
+					]
+				}
+			],
+			"environment": [
+				"coastal",
+				"underwater"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/kraken-priest.mp3"
+			},
+			"traitTags": [
+				"Amphibious",
+				"Siege Monster"
+			],
+			"languageTags": [
+				"X"
+			],
+			"damageTags": [
+				"S",
+				"L",
+				"T"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"conditionInflictSpell": [
+				"prone",
+				"restrained"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/VGM/Kraken Priest.png",
+			"fluff": {
+				"name": "Kraken Priest",
+				"source": "VGM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"A kraken can seem godlike to folk who have witnessed its fury. Those who mistake its might for divine power and those who seek to appease the monster through veneration are sometimes rewarded with power, to serve thereafter as kraken priests.",
+											"The kraken can make itself dimly aware of a kraken priest's thoughts if the two are on the same plane of existence, and it can then push aside the priest's personality and control it. Kraken priests can thereby act as eyes and ears for their masters, and when the kraken has something to say, the priest becomes its mouthpiece.",
+											"Every kraken priest undergoes a change in appearance that reflects the kraken's influence, although each one differs in how its reverence is displayed. One kraken priest might have ink-black eyes and a suckered tentacle for a tongue, while another has a featureless face and a body covered in eyes and mouths that dribble seawater. These horrific manifestations intensify when the kraken possesses its minion to utter its dire pronouncements."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/VGM/Kraken Priest.jpg"
+						}
+					}
+				]
+			},
+			"senses": [
+				"truesight 120 ft."
+			],
+			"senseTags": [
+				"U"
+			],
+			"save": {
+				"str": "+15",
+				"con": "+16",
+				"cha": "+17",
+				"wis": "+12"
+			},
+			"immune": [
+				{
+					"immune": [
+						"cold",
+						"lightning",
+						"thunder"
+					]
+				}
+			],
+			"conditionImmune": [
+				{
+					"conditionImmune": [
+						"charmed",
+						"frightened",
+						"unconscious"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multattack",
+					"entries": [
+						"Kraken Priest make two attacks with Kraken Tooth, and teleport up to 30 feet."
+					]
+				},
+				{
+					"name": "Kraken Tooth",
+					"entries": [
+						"{@atk mw} {@hit 15} to hit, reach 10 ft., one target. {@h}26 ({@damage 4d8 + 8}) slashing damage."
+					]
+				},
+				{
+					"name": "Thunderous Touch",
+					"entries": [
+						"{@atk mw} {@hit 15} to hit, reach 10 ft., one target. {@h}53 ({@damage 10d8 + 8}) lightning damage, plus 28 ({@damage 8d6}) thunder damage."
+					]
+				},
+				{
+					"name": "Lightning Storm",
+					"entries": [
+						"The kraken priest magically creates three bolts of lightning, each of which can strike a target the kraken can see within 120 feet of it. A target must make a {@dc 23} Dexterity saving throw, taking 22 ({@damage 4d10}) lightning damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"reaction": [
+				{
+					"name": "Absorb Storm",
+					"entries": [
+						"Upon taking thunder or lightning damage, the priest can use the reaction to become immune and absolve the damage, recovering HP equal to the damage dealt, after which everything (including objects) within a 30ft area takes damage."
+					]
+				}
+			],
+			"legendaryActions": 3,
+			"legendary": [
+				{
+					"name": "Teleport",
+					"entries": [
+						"Teleporta 120 feets"
+					]
+				},
+				{
+					"name": "Spell",
+					"entries": [
+						"Conjura uma magia."
+					]
+				},
+				{
+					"name": "Call Storm",
+					"entries": [
+						"5 raios partem o céu e atigem 5 alvos, ({@dice 7d6})  Trovejante, ({@dice 7d6}) Raio. TR Dex CD 23 ou metade do dano"
+					]
+				}
+			]
+		}
+	]
+}
