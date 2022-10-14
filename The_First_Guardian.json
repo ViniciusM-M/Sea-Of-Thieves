@@ -1,0 +1,270 @@
+{
+	"siteVersion": "1.168.2",
+	"_meta": {
+		"sources": [
+			{
+				"json": "VNPC",
+				"abbreviation": "VNPC",
+				"full": "35 Versatile NPCs",
+				"authors": [
+					"Darrin Scott"
+				],
+				"convertedBy": [
+					"jimmypringles"
+				],
+				"version": "1.1",
+				"url": "https://www.dmsguild.com/product/208518/35-Versatile-NPCs",
+				"targetSchema": "1.9.2"
+			}
+		],
+		"dateAdded": 1665762788,
+		"dateLastModified": 1665762788
+	},
+	"monster": [
+		{
+			"name": "The First Guardian",
+			"source": "VNPC",
+			"page": 170,
+			"basicRules": true,
+			"size": [
+				"L"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d10 + 64",
+				"average": 152
+			},
+			"speed": {
+				"walk": 20,
+				"swim": 30
+			},
+			"str": 20,
+			"dex": 10,
+			"con": 18,
+			"int": 16,
+			"wis": 22,
+			"cha": 10,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 22,
+			"immune": [
+				"acid",
+				"cold",
+				"poison",
+				"psychic",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't adamantine"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"languages": [
+				"understands the languages of its creator but can't speak"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Immutable Form",
+					"entries": [
+						"The golem is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The golem has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The golem's weapon attacks are magical."
+					]
+				},
+				{
+					"name": "Berserk",
+					"entries": [
+						"Whenever the golem starts its turn with 50 hit points or fewer, roll a {@dice d6}. On a 6, the golem goes berserk. On each of its turns while berserk, the golem attacks the nearest creature it can see. If no creature is near enough to move and attack, the golem attacks an object, with preference for an object smaller than itself. Once the golem goes berserk, it continues to do so until it is destroyed or regains all its hit points. The golem’s creator, if within 60 feet of the berserk golem, can try to calm it by speaking firmly and persuasively. The golem must be able to hear its creator, who must take an action to make a {@dc 15} Charisma (Persuasion) check. If the check succeeds, the golem ceases being berserk. If it takes damage while still at 50 hit points or fewer, the golem might go berserk again."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The golem makes two slam attacks."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}18 ({@damage 3d8 + 5}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Slow {@recharge 5}",
+					"entries": [
+						"The golem targets one or more creatures it can see within 10 feet of it. Each target must make a {@dc 17} Wisdom saving throw against this magic. On a failed save, a target can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the target can take either an action or a bonus action on its turn, not both. These effects last for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Prismatic Gem",
+					"entries": [
+						"The golem fires two magic beams from its eyes at two targets of its choice within 90 feet of it. Each target must make a {@dc 17} Dexterity saving throw. For each target, roll a {@dice d8} to determine which color ray affects it (reroll the duplicates).",
+						"1. Red. The targeted creature takes {@damage 4d8} fire damage on a failed save, or half as much damage on a successful one.",
+						"2. Orange. The targeted creature takes {@damage 4d8} acid damage on a failed save, or half as much damage on a successful one.",
+						"3. Yellow. The targeted creature takes {@damage 4d8} lightning damage on a failed save, or half as much damage on a successful one.",
+						"4. Green. The targeted creature takes {@damage 4d8} poison damage on a failed save, or half as much damage on a successful one.",
+						"5. Blue. The targeted creature takes {@damage 4d8} cold damage on a failed save, or half as much damage on a successful one.",
+						"6. Indigo. On a failed save, the target is {@condition restrained}. It must then make a {@dc 14} Constitution saving throw at the end of each of its turns. If it successfully saves three times, the spell ends. If it fails its save three times, it permanently turns to stone and is subjected to the {@condition petrified} condition. The successes and failures don’t need to be consecutive; keep track of both until the target collects three of a kind. At any time, casting greater restoration on the target removes the {@condition restrained} condition and ends the petrification process.",
+						"7. Violet. On a failed save, the target is {@condition blinded}. The target can make a {@dc 14} Wisdom saving throw at the end of each of its turns. A successful save by the creature ends the {@condition blinded} condition.",
+						"8. Special. The target is struck by two rays. Roll twice more, rerolling any 8s."
+					]
+				}
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/stone-golem.mp3"
+			},
+			"traitTags": [
+				"Immutable Form",
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"CS"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/MM/Stone Golem.png",
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Stone golems display great variety in shape and form, cut and chiseled from stone to appear as tall, impressive statues. Though most bear humanoid features, stone golems can be carved in any form the sculptor can imagine. Ancient stone golems found in sealed tombs or flanking the gates of lost cities sometimes take the forms of giant beasts.",
+									"Like other golems, stone golems are nearly impervious to spells and ordinary weapons. Creatures that fight a stone golem can feel the ebb and flow of time slow down around them, almost as though they were made of stone themselves.",
+									{
+										"type": "entries",
+										"name": "Golems",
+										"entries": [
+											"Golems are made from humble materials-clay, flesh and bones, iron, or stone-but they possess astonishing power and durability. A golem has no ambitions, needs no sustenance, feels no pain, and knows no remorse. An unstoppable juggernaut, it exists to follow its creator's orders, and it protects or attacks as that creator demands.",
+											"To create a golem, one requires a manual of golems (see the Dungeon Master's Guide). The comprehensive illustrations and instructions in a manual detail the process for creating a golem of a particular type.",
+											{
+												"name": "Elemental Spirit in Material Form",
+												"entries": [
+													" The construction of a golem begins with the building of its body, requiring great command of the craft of sculpting, stonecutting, ironworking, or surgery. Sometimes a golem's creator is the master of the art, but often the individual who desires a golem must enlist master artisans to do the work.",
+													"After constructing the body from clay, flesh, iron, or stone, the golem's creator infuses it with a spirit from the Elemental Plane of Earth. This tiny spark of life has no memory, personality, or history. It is simply the impetus to move and obey. This process binds the spirit to the artificial body and subjects it to the will of the golem's creator.",
+													"A golem can be created with a special amulet or other item that allows the possessor of the item to control the golem. Golems whose creators are long dead can thus be harnessed to serve a new master.",
+													"A golem can't think or act for itself. Though it understands its commands perfectly, it has no grasp of language beyond that understanding, and can't be reasoned with or tricked with words."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Ageless Guardians",
+												"entries": [
+													" Golems can guard sacred sites, tombs, and treasure vaults long after the deaths of their creators, carrying out their appointed tasks for all eternity while brushing off physical damage and ignoring all but the most potent spells."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Blind Obedience",
+												"entries": [
+													"When its creator or possessor is on hand to command it, a golem performs flawlessly. If the golem is left without instructions or is {@condition incapacitated}, it continues to follow its last orders to the best of its ability. When it can't fulfill its orders, a golem might react violently-or stand and do nothing. A golem that has been given conflicting orders sometimes alternates between them."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Constructed Nature",
+												"entries": [
+													" A golem doesn't require air, food, drink, or sleep."
+												],
+												"type": "entries"
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://media.discordapp.net/attachments/557321504220643349/1030502581077807104/unknown.png?width=548&height=683"
+						}
+					}
+				]
+			},
+			"save": {
+				"wis": "+9",
+				"str": "+8",
+				"int": "+6"
+			},
+			"skill": {
+				"athletics": "+8",
+				"perception": "+12"
+			},
+			"conditionInflict": [
+				"blinded",
+				"restrained"
+			],
+			"bonus": [
+				{
+					"name": "Arcane Discharge",
+					"entries": [
+						"The golem chooses among eight arcane schools to focus on, after choosing, roll {@dice 1d10 - 1} (minimum 1) the value rolled is characterized by the cycle of the spell the Golem chooses to be effected by. In addition, each school has a color, an aura of 15 feet is around the golem causing the following effects referring to schools of magic, when leaving the aura the effect ends;",
+						"Transmutation: Gems and metals (non-magical) are transmuted to gravel within the aura, arcane focuses that are gems are affected as well and become gravel ceasing to be an arcane focus.",
+						"Necromancy: Heals from spells, race or class traits are cut in half, the Golem steals half of its vitality for itself.",
+						"Illusion: Illusion copies hinder anyone inside the aura, attack rolls inside the aura are made at disadvantage.",
+						"Evocation: Strong pulses of energy emanate within the aura, the terrain within the aura is considered difficult terrain, at the end of the turn within the aura, take {@damage 1d6} force damage.",
+						"Enchantment: The golem can manipulate the targets within its aura, upon receiving an attack roll, the Golem can manipulate the attacker into attacking another target, the attacker must make a {@dc 17} Wisdom saving throw, if they fail they must attack another target .",
+						"Divination: The Golem gains some control by fate, once per round the Golem can choose the result of {@dice 1d20} from a target within its aura.",
+						"Conjuration: The Golem can conjure some sea creatures to aid in combat, choose between {@dice 1d4 - 1} (Minimum 1) Merrow or {@dice 1d6} Dust Mephit.",
+						"Abjuration: When taking damage, the Golem can use its reaction while using this aura to fully absorb the damage taken."
+					]
+				}
+			]
+		}
+	]
+}
